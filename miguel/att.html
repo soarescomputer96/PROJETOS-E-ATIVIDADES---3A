@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="  -UA-Compatible" content="IE=edge">
+<meta name="keywords" content="Site Mobile, Site Responsivo, Responsividade" />
+<title>Site Responsivo</title>
+<meta name="description" content="Site prático de Responsividade Mobile">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Ítalo Nunes">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel= 'https://fonts.googleaps.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="icon" href="img/icon1.jpg">
+</head>
+<body>
+    <!-- CABEÇALHO --> 
+    <header class="cabecalho container">
+        <a href="index.html"><h1 class="logo"> Site Responsivo </h1></a>
+        <button class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></button>
+        <nav class="menu">
+            <a class="btn-close"><i class="fa fa-times"></i></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="cliente.html">Cliente</a></li>
+                <li><a href="receitas.html">Receitas</a></li>
+                <li><a href="qsomos.html">Quem somos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>          
+    </header>
+    <!-- BANNER --> 
+    <div class="banner container">
+        <div class="title">
+            <h2> Cozinha Nutritiva </h2>
+            <h3> Seja sempre o melhor no que faz, o resto é resto!</h3>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-cadastrar bg-white radius"> Cadastrar <i class="fa fa-arrow-circle-right"></i></button>
+            <button class="btn btn-sobre bg-black radius"> Sobre <i class="fa fa-question-circle"></i></button>
+        </div>
+    </div>
+    <!-- SERVICOS --> 
+    <main class="servicos container">
+        <article class="servico bg-white radius">
+            <a href="#"><img src="https://www.receiteria.com.br/wp-content/uploads/salpicao-saudavel-capa.jpeg" alt=""></a>
+            <div class="inner">
+                <a href="#">Salpicão saudáve                </a>
+                <p>Essa é uma boa alternativa para quem adora o salpicão tradicional mas quer experimentar uma versão diferente e gostosa. O charme da receita está no iogurte natural e na maçã verde. Confira! </p>
+            </div>
+        </article>
+        <article class="servico bg-white radius">
+            <a href="#"><img src="https://www.receiteria.com.br/wp-content/uploads/strogonoff-de-frango-fit.jpg" alt=""></a>
+            <div class="inner">
+                <a href="#"> Strogonoff de frango fit                </a>
+                <p>Com apenas 6 ingredientes, você poderá ter um strogonoff saboroso e menos calórico que o prato tradicional, e ele fica pronto em 20 minutos. Descubra como preparar a carne e o molho!  </p>
+            </div>
+        </article>
+        <article class="servico bg-white radius">
+            <a href="#"><img src="https://www.receiteria.com.br/wp-content/uploads/brigadeiro-fit-com-3-ingredientes-rotated.jpeg" alt=""></a>
+            <div class="inner">
+                <a href="#"> Brigadeiro fit com 3 ingredientes                </a>
+                <p>O brigadeiro é uma sobremesa queridinha dos brasileiros e, por isso, não podia ficar de fora da lista. Além de ter uma textura muito parecida com a do docinho tradicional, essa receita leva apenas três ingredientes: bananas bem maduras, cacau em pó e leite em pó.                </p>
+            </div>
+        </article>
+    </main>
+    <!-- NEWSLETTER -->
+    <section class="newsletter container bg-black">
+        <h2> Inscreva-se agora! </h2>
+        <h3>  Receba novidades, dicas e muito mais </h3>
+        <form>
+            <input class="bg-black radius" type="email" name="email" placeholder="Seu email">
+            <button class="bg-white radius"> Cadastrar </button>
+        </form>
+    </section>
+    <!-- RODAPÉ -->
+    <footer class="rodape container bg-gradient">
+        <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="copyright">
+        Copyright © Ítalo Nunes 2022. Todos os direitos reservados.
+    </footer>       
+    
+    <!-- JQUERY --> 
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+    $(".btn-menu").click(function(){
+        $(".menu").show();
+    });
+    $(".btn-close").click(function(){
+        $(".menu").hide();
+    });
+    </script>      
+</body>
+</html>
